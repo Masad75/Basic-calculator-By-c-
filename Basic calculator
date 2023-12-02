@@ -1,0 +1,57 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+void square(int num){
+   cout <<   num*num << endl;
+}
+void squareroot(int num){
+cout<< sqrt(num)  << endl;
+}
+int main()
+{
+int num1, num2,num3,num4,num5,num6,num7,num8,num9,num10;
+   char op;
+cin >> num1;
+   cin >> op;
+   cin >> num2;
+if(op == '+'){
+    cout << num1+num2;
+}
+   else
+        {
+   if (op == '-'){
+    cout << num1-num2;
+}
+   else
+   {
+       if(op== '*'){
+        cout << num1*num2;
+        }
+       else
+        {
+       if(op == '/'){
+cout << num1 / num2 ;
+       }
+       else
+            {
+       if(op =='%' ){
+cout << num1 % num2;
+       }
+       else
+        {
+       if(op ==  's'){
+        square(num1);
+}
+else
+{
+       if (op ==' sr '){
+        squareroot(num1);
+        }
+       }
+       }
+       }
+}
+}
+   }
+return 0;
+}
